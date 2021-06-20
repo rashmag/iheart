@@ -61,7 +61,6 @@
                 android:background="@drawable/bottom_line_edittext"
                 android:fontFamily="@font/manrope_regular"
                 android:hint="72"
-                android:maxLength="2"
                 android:imeOptions="actionDone"
                 android:singleLine="true"
                 android:textColor="@android:color/black"
@@ -89,7 +88,6 @@
                 android:background="@drawable/bottom_line_edittext"
                 android:fontFamily="@font/manrope_regular"
                 android:hint="72"
-                android:maxLength="2"
                 android:imeOptions="actionDone"
                 android:singleLine="true"
                 android:textColor="@android:color/black"
@@ -117,7 +115,6 @@
                 android:background="@drawable/bottom_line_edittext"
                 android:fontFamily="@font/manrope_regular"
                 android:hint="185"
-                android:maxLength="3"
                 android:imeOptions="actionDone"
                 android:singleLine="true"
                 android:textColor="@android:color/black"
@@ -145,7 +142,6 @@
                 android:background="@drawable/bottom_line_edittext"
                 android:fontFamily="@font/manrope_regular"
                 android:hint="185"
-                android:maxLength="3"
                 android:imeOptions="actionDone"
                 android:singleLine="true"
                 android:textColor="@android:color/black"
@@ -173,7 +169,6 @@
                 android:background="@drawable/bottom_line_edittext"
                 android:fontFamily="@font/manrope_regular"
                 android:hint="185"
-                android:maxLength="3"
                 android:imeOptions="actionDone"
                 android:singleLine="true"
                 android:textColor="@android:color/black"
@@ -201,7 +196,6 @@
                 android:background="@drawable/bottom_line_edittext"
                 android:fontFamily="@font/manrope_regular"
                 android:hint="185"
-                android:maxLength="3"
                 android:imeOptions="actionDone"
                 android:singleLine="true"
                 android:textColor="@android:color/black"
@@ -213,7 +207,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/titleMakin6" />
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/saveBtn"
+                android:id="@+id/getRecomBtn"
                 android:layout_width="336dp"
                 android:layout_height="46dp"
                 android:layout_marginTop="52dp"
@@ -243,7 +237,7 @@
                 android:textSize="12sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/saveBtn" />
+                app:layout_constraintTop_toBottomOf="@+id/getRecomBtn" />
 
             <TextView
                 android:id="@+id/direction"

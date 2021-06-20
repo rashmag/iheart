@@ -33,7 +33,6 @@ public class UserFragment extends Fragment {
 
     private TextView nameUser,emailUser,personInfo,resultAnket,resultAnaliz
             ,historyZakaz;
-    // TODO: Rename and change types of parameter
     private String mParam1;
     private String mParam2;
     MainActivity mainActivity;
