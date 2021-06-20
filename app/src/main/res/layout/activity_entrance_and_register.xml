@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent"
+    tools:context=".Auth.EntranceAndRegister">
+
+    <TextView
+        android:id="@+id/titleAuth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:fontFamily="@font/manrope_regular"
+        android:text="Добро пожаловать в iHeart!"
+        android:textColor="@color/mainColor"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/titleAuth2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="58dp"
+        android:layout_marginTop="31dp"
+        android:fontFamily="@font/manrope_regular"
+        android:gravity="center"
+        android:text="Осознанный поход
+к потреблению добавок и витаминов."
+        android:textColor="@color/authText"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleAuth" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginBottom="222dp"
+        android:gravity="center"
+        android:text="Мы поможем приобрести
+необходимые БАД в соответствии с вашими показателями здоровья и отслеживать их приём."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="35dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/manrope_semi_bold"
+        android:gravity="center"
+        android:text="Вход"
+        android:id="@+id/titleEntrance"
+        android:textColor="@color/mainColor"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registBtn" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/registBtn"
+        android:layout_width="347dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="144dp"
+        android:background="@drawable/btn_fill_rules"
+        android:fontFamily="@font/manrope_semi_bold"
+        android:text="Регистрация"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="35dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/manrope_bold"
+        android:gravity="center"
+        android:text="© iHeart, 2020"
+        android:textColor="#24000000"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/direction"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/direction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="35dp"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/manrope_regular"
+        android:gravity="center"
+        android:text="Подготовлено командой EDUCATED! в рамках участия во всероссийском хакатоне “Цифровой Прорыв”."
+        android:textColor="#24000000"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

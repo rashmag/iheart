@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".Fragments.UserFragment">
+
+    <ProgressBar
+        android:id="@+id/progressBarProfile"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Параметры"
+        android:textColor="#56000000"
+        android:textSize="16sp"
+        android:fontFamily="@font/manrope_regular"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="32dp"
+        android:id="@+id/titleUserFragment"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/titleUserFragment"
+        app:layout_constraintStart_toStartOf="@+id/titleUserFragment"
+        android:hint="Имя"
+        android:textColor="@color/nameUser"
+        android:textSize="20sp"
+        android:fontFamily="@font/manrope_semi_bold"
+        android:textColorHint="@android:color/darker_gray"
+        android:layout_marginTop="24dp"
+        android:id="@+id/nameUser"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="логин"
+        android:textColor="@color/emailUser"
+        android:fontFamily="@font/manrope_medium"
+        android:id="@+id/emailUser"
+        app:layout_constraintStart_toStartOf="@+id/titleUserFragment"
+        app:layout_constraintTop_toBottomOf="@+id/nameUser"
+        android:layout_marginTop="12dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/manrope_medium"
+        android:textSize="16sp"
+        android:text="Личная информация"
+        android:textColor="@color/mainColor"
+        android:layout_marginTop="48dp"
+        android:id="@+id/personInfo"
+        app:layout_constraintStart_toStartOf="@+id/emailUser"
+        app:layout_constraintTop_toBottomOf="@+id/emailUser"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/manrope_medium"
+        android:textSize="16sp"
+        android:id="@+id/resultAnket"
+        android:text="Результаты анкетирования"
+        android:textColor="@color/mainColor"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="@+id/emailUser"
+        app:layout_constraintTop_toBottomOf="@+id/personInfo"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/manrope_medium"
+        android:textSize="16sp"
+        android:id="@+id/resultAnaliz"
+        android:text="Результаты анализов"
+        android:textColor="@color/mainColor"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="@+id/emailUser"
+        app:layout_constraintTop_toBottomOf="@+id/resultAnket"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/manrope_medium"
+        android:textSize="16sp"
+        android:id="@+id/historyZakaz"
+        android:text="История заказов"
+        android:textColor="@color/mainColor"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="@+id/emailUser"
+        app:layout_constraintTop_toBottomOf="@+id/resultAnaliz"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/manrope_medium"
+        android:textSize="16sp"
+        android:id="@+id/historyPriems"
+        android:text="История приема препаратов"
+        android:textColor="@color/mainColor"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="@+id/emailUser"
+        app:layout_constraintTop_toBottomOf="@+id/historyZakaz"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/manrope_medium"
+        android:textSize="16sp"
+        android:text="Выход"
+        android:textColor="@color/mainColor"
+        android:id="@+id/outProfile"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="@+id/emailUser"
+        app:layout_constraintTop_toBottomOf="@+id/historyPriems"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

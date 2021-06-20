@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".Fragments.CartProductFragment">
+
+    <ImageView
+        android:id="@+id/backCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/back_cart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/cartIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="40dp"
+        android:src="@drawable/cart_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:layout_width="14dp"
+        android:id="@+id/cartCountForm"
+        android:layout_height="18dp"
+        android:src="@drawable/form_cart_icon_count"
+        app:layout_constraintBottom_toBottomOf="@+id/cartIcon"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintEnd_toEndOf="@+id/cartIcon"
+        app:layout_constraintTop_toTopOf="@+id/cartIcon" />
+    <ProgressBar
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:id="@+id/progressBarCount"
+        app:layout_constraintEnd_toEndOf="@+id/cartCountForm"
+        app:layout_constraintStart_toStartOf="@+id/cartCountForm"
+        app:layout_constraintBottom_toBottomOf="@+id/cartCountForm"
+        app:layout_constraintTop_toTopOf="@+id/cartCountForm"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint=""
+        android:textColorHint="@android:color/white"
+        android:textSize="10sp"
+        android:textColor="@android:color/white"
+        android:id="@+id/cartCount"
+        app:layout_constraintEnd_toEndOf="@+id/cartCountForm"
+        app:layout_constraintStart_toStartOf="@+id/cartCountForm"
+        app:layout_constraintBottom_toBottomOf="@+id/cartCountForm"
+        app:layout_constraintTop_toTopOf="@+id/cartCountForm"/>
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="53dp"
+        android:fontFamily="@font/manrope_medium"
+        android:hint="Название"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:id="@+id/nameCartProduct"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cartIcon" />
+
+    <ImageView
+        android:id="@+id/imageViewProduct"
+        android:layout_width="184dp"
+        android:layout_height="184dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameCartProduct" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/addCart"
+        android:layout_width="347dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/btn_fill_rules"
+        android:fontFamily="@font/manrope_semi_bold"
+        android:text="Добавить в корзину"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewProduct" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

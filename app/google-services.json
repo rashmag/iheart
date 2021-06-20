@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "906683816298",
+    "project_id": "iherb-4b4dc",
+    "storage_bucket": "iherb-4b4dc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:906683816298:android:0a6b745d7170e74e1d2d13",
+        "android_client_info": {
+          "package_name": "com.example.iherb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "906683816298-hmronv2u6pbimc03j036lmi4gd4brh0h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.iherb",
+            "certificate_hash": "f7d4c51b3202b245a16f22151734bf3e910a19ed"
+          }
+        },
+        {
+          "client_id": "906683816298-4euq76tsvtoe1ta067iloat0q6pbm7qd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBp156T3CpbEcyvKixfA0AAj5s9PR4huJg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "906683816298-4euq76tsvtoe1ta067iloat0q6pbm7qd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

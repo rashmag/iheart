@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.ArticlesFragment">
+    <TextView
+        android:id="@+id/nameUser"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/manrope_regular"
+        android:hint="Имя"
+        android:singleLine="true"
+        android:textColor="@color/wellcomColor"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameUser"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="347dp"
+        android:id="@+id/caonstLayStep"
+        android:layout_height="192dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/form_articles_one"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/heart_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="23dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/manrope_medium"
+            android:gravity="center"
+            android:text="Повысьте свой уровень осознанности приёма БАД. Вместе с iHeart."
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/stepBtn"
+            android:layout_width="320dp"
+            android:layout_height="46dp"
+            android:background="@drawable/form_btn_articles_one_white"
+            android:fontFamily="@font/manrope_semi_bold"
+            android:text="Шаг к осознанности"
+            android:textAllCaps="false"
+            android:textColor="@color/mainColor"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Прислушайтесь к своему организму"
+        android:textColor="@color/mainColor"
+        android:fontFamily="@font/manrope_semi_bold"
+        android:textSize="18sp"
+        android:id="@+id/titleListen"
+        app:layout_constraintTop_toBottomOf="@+id/caonstLayStep"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/titleListen"
+        android:layout_marginTop="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/titleListenDescription"
+        android:text="Дополнительные сведения о вашем здоровье
+помогут обеспечить лучшие рекомендации."
+        android:textColor="#40000000"
+        android:layout_marginHorizontal="45dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/passTestBtn"
+        android:layout_width="320dp"
+        android:layout_height="46dp"
+        android:background="@drawable/form_btn_articles_one_yellow"
+        android:fontFamily="@font/manrope_semi_bold"
+        android:text="Пройти тестирование"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleListenDescription" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/makeTestsBtn"
+        android:layout_width="320dp"
+        android:layout_height="46dp"
+        android:background="@drawable/btn_fill_rules"
+        android:fontFamily="@font/manrope_semi_bold"
+        android:text="Внести анализы"
+        android:textAllCaps="false"
+        android:layout_marginTop="12dp"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passTestBtn" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewArticles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/makeTestsBtn"/>
+
+    <ProgressBar
+        android:id="@+id/progressBarArticles"
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/recyclerViewArticles" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

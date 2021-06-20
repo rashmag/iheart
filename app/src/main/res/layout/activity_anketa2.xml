@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Anketa.Anketa">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:src="@drawable/smiley"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/titleAnketa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/manrope_regular"
+                android:text="Ура! Дело за малым..."
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+
+            <TextView
+                android:id="@+id/titleDescriptionAnketa"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="35dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/manrope_regular"
+                android:text="Позвольте нам  получить дополнительную информацию, чтобы лучше настроить рекомендации."
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/titleAnketa" />
+
+
+            <TextView
+                android:id="@+id/question1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="32dp"
+                android:fontFamily="@font/manrope_medium"
+                android:text="Как вы себя чувствуете?"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/titleDescriptionAnketa" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupQuestion1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="@+id/question1"
+                app:layout_constraintTop_toBottomOf="@+id/question1">
+
+                <RadioButton
+                    android:id="@+id/radio0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/manrope_medium"
+                    android:button="@drawable/check"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:text="Приподнятно"
+                    android:textColor="@android:color/black" />
+
+                <RadioButton
+                    android:id="@+id/radio1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:button="@drawable/check"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:text="Нейтрально"
+                    android:textColor="@android:color/black" />
+
+                <RadioButton
+                    android:id="@+id/radio2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:button="@drawable/check"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/manrope_medium"
+                    android:text="Грустно"
+                    android:textColor="@android:color/black" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/question2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/manrope_medium"
+                android:text="Часто ли вы испытываете слабость?"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/radioGroupQuestion1" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupQuestion2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="@+id/question2"
+                app:layout_constraintTop_toBottomOf="@+id/question2">
+
+                <RadioButton
+                    android:id="@+id/radio3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:button="@drawable/check"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/manrope_medium"
+                    android:paddingLeft="10dp"
+                    android:text="Да"
+                    android:textColor="@android:color/black" />
+
+                <RadioButton
+                    android:id="@+id/radio4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:button="@drawable/check"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/manrope_medium"
+                    android:text="Нет"
+                    android:textColor="@android:color/black" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/question3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/manrope_medium"
+                android:text="Часто ли вы у вас бывает простуда?"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/radioGroupQuestion2" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupQuestion3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="@+id/question3"
+                app:layout_constraintTop_toBottomOf="@+id/question3">
+
+                <RadioButton
+                    android:id="@+id/radio5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:button="@drawable/check"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/manrope_medium"
+                    android:paddingLeft="10dp"
+                    android:text="Да, 3-4 раза в год"
+                    android:textColor="@android:color/black" />
+
+                <RadioButton
+                    android:id="@+id/radio6"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/manrope_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:button="@drawable/check"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:text="Нет"
+                    android:textColor="@android:color/black" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/question4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/manrope_medium"
+                android:text="Быстро ли вы утомляетесь?"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/radioGroupQuestion3" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupQuestion4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="@+id/question4"
+                app:layout_constraintTop_toBottomOf="@+id/question4">
+
+                <RadioButton
+                    android:id="@+id/radio7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:button="@drawable/check"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/manrope_medium"
+                    android:paddingLeft="10dp"
+                    android:text="Да"
+                    android:textColor="@android:color/black" />
+
+                <RadioButton
+                    android:id="@+id/radio8"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/manrope_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:button="@drawable/check"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:text="Нет, могу долго бодрствовать"
+                    android:textColor="@android:color/black" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/question5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/manrope_medium"
+                android:text="Испытываете ли вы боль в суставах?"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/radioGroupQuestion4" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupQuestion5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="@+id/question5"
+                app:layout_constraintTop_toBottomOf="@+id/question5">
+
+                <RadioButton
+                    android:id="@+id/radio9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/manrope_medium"
+                    android:button="@drawable/check"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:text="Да, периодически"
+                    android:textColor="@android:color/black" />
+
+                <RadioButton
+                    android:id="@+id/radio10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:button="@drawable/check"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/manrope_medium"
+                    android:paddingLeft="10dp"
+                    android:text="Нет"
+                    android:textColor="@android:color/black" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/question6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/manrope_medium"
+                android:text="Часто ли вы испытываете апатию?"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/radioGroupQuestion5" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupQuestion6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="@+id/question6"
+                app:layout_constraintTop_toBottomOf="@+id/question6">
+
+                <RadioButton
+                    android:id="@+id/radio11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:button="@drawable/check"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/manrope_medium"
+                    android:text="Да, 3-4 раза в год"
+                    android:textColor="@android:color/black" />
+
+                <RadioButton
+                    android:id="@+id/radio12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:button="@drawable/check"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/manrope_medium"
+                    android:paddingLeft="10dp"
+                    android:text="Нет"
+                    android:textColor="@android:color/black" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/question7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/manrope_medium"
+                android:text="Нарушен ли у вас сон?"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/radioGroupQuestion6" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupQuestion7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="@+id/question7"
+                app:layout_constraintTop_toBottomOf="@+id/question7">
+
+                <RadioButton
+                    android:id="@+id/radio13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:button="@drawable/check"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/manrope_medium"
+                    android:paddingLeft="10dp"
+                    android:text="Да, частая бессоница"
+                    android:textColor="@android:color/black" />
+
+                <RadioButton
+                    android:id="@+id/radio14"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/manrope_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:button="@drawable/check"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:text="Нет"
+                    android:textColor="@android:color/black" />
+            </RadioGroup>
+            <TextView
+                android:id="@+id/question8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/manrope_medium"
+                android:text="Хрупкие ли у вас ногти?"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/radioGroupQuestion7" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupQuestion8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="@+id/question8"
+                app:layout_constraintTop_toBottomOf="@+id/question8">
+
+                <RadioButton
+                    android:id="@+id/radio15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:button="@drawable/check"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/manrope_medium"
+                    android:paddingLeft="10dp"
+                    android:text="Да, ломкие тоги"
+                    android:textColor="@android:color/black" />
+
+                <RadioButton
+                    android:id="@+id/radio16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:button="@drawable/check"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/manrope_medium"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:text="Нет"
+                    android:textColor="@android:color/black" />
+            </RadioGroup>
+                <TextView
+                    android:id="@+id/myWeight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:fontFamily="@font/manrope_medium"
+                    android:text="Ваш вес"
+                    android:layout_marginTop="24dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/radioGroupQuestion8" />
+
+                <EditText
+                    android:id="@+id/weightCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bottom_line_edittext"
+                    android:fontFamily="@font/manrope_regular"
+                    android:hint="72"
+                    android:maxLength="2"
+                    android:imeOptions="actionDone"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textSize="20sp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="32dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/myWeight" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ваш рост"
+                    android:id="@+id/myHeight"
+                    android:layout_marginTop="28dp"
+                    android:fontFamily="@font/manrope_medium"
+                    app:layout_constraintTop_toBottomOf="@+id/weightCount"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="32dp"/>
+
+            <EditText
+                android:id="@+id/heightCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bottom_line_edittext"
+                android:fontFamily="@font/manrope_regular"
+                android:hint="183"
+                android:imeOptions="actionDone"
+                android:maxLength="3"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/darker_gray"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/myHeight" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/saveBtn"
+                android:layout_width="336dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="118dp"
+                android:background="@drawable/btn_fill_rules"
+                android:fontFamily="@font/manrope_semi_bold"
+                android:text="Сохранить"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/heightCount" />
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="35dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/manrope_bold"
+                android:gravity="center"
+                android:text="© iHeart, 2020"
+                android:textColor="#24000000"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toTopOf="@+id/direction"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/direction"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="35dp"
+                android:layout_marginBottom="24dp"
+                android:fontFamily="@font/manrope_regular"
+                android:gravity="center"
+                android:text="Подготовлено командой EDUCATED! в рамках участия во всероссийском хакатоне “Цифровой Прорыв”."
+                android:textColor="#24000000"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <!--    <TextView-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="31dp"-->
+    <!--        android:id="@+id/question1"-->
+    <!--        android:text="Часто ли вы испытываете слабость?"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/myHeight"-->
+    <!--        android:fontFamily="@font/manrope_medium"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/heightCount"/>-->
+
+    <!--    <RadioGroup-->
+    <!--        android:id="@+id/radioGroupQuestion1"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:orientation="horizontal"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/question1"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/question1">-->
+
+    <!--        <RadioButton-->
+    <!--            android:id="@+id/radio0"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:background="@null"-->
+    <!--            android:button="@drawable/check"-->
+    <!--            android:gravity="center"-->
+    <!--            android:paddingLeft="10dp"-->
+    <!--            android:text="Мужской"-->
+    <!--            android:textColor="@android:color/black" />-->
+
+    <!--        <RadioButton-->
+    <!--            android:id="@+id/radio1"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginStart="24dp"-->
+    <!--            android:button="@drawable/check"-->
+    <!--            android:gravity="center"-->
+    <!--            android:paddingLeft="10dp"-->
+    <!--            android:text="Женский"-->
+    <!--            android:textColor="@android:color/black" />-->
+    <!--    </RadioGroup>-->
+    <!--    <TextView-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="24dp"-->
+    <!--        android:id="@+id/question2"-->
+    <!--        android:text="Часто ли вы у вас бывает простуда?"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/myHeight"-->
+    <!--        android:fontFamily="@font/manrope_medium"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/radioGroupQuestion1"/>-->
+
+    <!--    <RadioGroup-->
+    <!--        android:id="@+id/radioGroupQuestion2"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:orientation="horizontal"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/question2"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/question2">-->
+
+    <!--        <RadioButton-->
+    <!--            android:id="@+id/radio3"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:background="@null"-->
+    <!--            android:button="@drawable/check"-->
+    <!--            android:gravity="center"-->
+    <!--            android:paddingLeft="10dp"-->
+    <!--            android:text="Да, 3-4 раза в год"-->
+    <!--            android:textColor="@android:color/black" />-->
+
+    <!--        <RadioButton-->
+    <!--            android:id="@+id/radio4"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginStart="24dp"-->
+    <!--            android:button="@drawable/check"-->
+    <!--            android:gravity="center"-->
+    <!--            android:paddingLeft="10dp"-->
+    <!--            android:text="Нет"-->
+    <!--            android:textColor="@android:color/black" />-->
+    <!--    </RadioGroup>-->
+</androidx.constraintlayout.widget.ConstraintLayout>

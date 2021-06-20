@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="128dp"
+            android:layout_height="96dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="46dp"
+            android:id="@+id/cartImg"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="12dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@+id/cartImg"
+            android:layout_marginTop="10dp"
+            android:id="@+id/nameCart"
+            android:hint="Название"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/manrope_medium"
+            android:textSize="13sp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/darker_gray"
+            app:layout_constraintStart_toEndOf="@+id/cartImg"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/nameCart"
+            android:layout_marginTop="28dp"
+            android:hint="Цена"
+            android:id="@+id/priceCart"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/mainColor"
+            android:fontFamily="@font/manrope_medium"
+            android:textSize="13sp"
+            android:textColorHint="@android:color/darker_gray"
+            app:layout_constraintStart_toEndOf="@+id/cartImg"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
